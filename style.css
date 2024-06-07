@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+  }
+  .form-wrap {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .form-wrap::before {
+    position: absolute;
+    content: "";
+    background: rgba(0 0 0 / 20%);
+    width: 100%;
+    height: 100%;
+  }
+  .form-wrap > form {
+    position: relative;
+    background: rgba(255 255 255 / 10%);
+    backdrop-filter: blur(15px);
+    min-width: 500px;
+    min-height: 500px;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    border: 2px solid rgba(255 255 255 / 30%);
+    box-shadow: 0 0 30px rgba(0 0 0 / 20%);
+  }
+  .form-wrap > form > h1 {
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin: 0 0 30px;
+  }
+  .form-wrap .form-group {
+    position: relative;
+    margin: 0 0 20px;
+  }
+  .form-wrap .form-group input {
+    width: 100%;
+    background: transparent;
+    min-height: 55px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 50px;
+    outline: unset;
+    border: 2px solid rgba(255 255 255 / 30%);
+  }
+  .form-wrap .form-group input::placeholder {
+    color: rgba(256 256 256 / 70%);
+  }
+  .form-wrap .form-group input:focus {
+    box-shadow: 0 0 20px rgba(256 256 256 / 30%);
+  }
+  .form-wrap .form-group input:focus + i {
+    color: #fff;
+  }
+  .form-wrap .form-group i {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(256 256 256 / 70%);
+  }
+  .form-wrap .forgot-pass {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .form-wrap .forgot-pass label {
+    color: #fff;
+    cursor: pointer;
+  }
+  .form-wrap .forgot-pass a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: unset;
+  }
+  .form-wrap .login {
+    margin: 20px 0;
+  }
+  .form-wrap .login button {
+    width: 100%;
+    background: rgba(256 256 256 / 50%);
+    color: #fff;
+    font-weight: 600;
+    min-height: 50px;
+    border: 0;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+  }
+  .form-wrap .login button:hover {
+    background: #fff;
+    color: #000;
+  }
+  .form-wrap .sign-up p {
+    color: #fff;
+  }
+  .form-wrap .sign-up a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: unset;
+  }
